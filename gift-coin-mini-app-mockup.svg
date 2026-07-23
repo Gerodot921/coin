@@ -1,0 +1,274 @@
+<svg width="920" height="1840" viewBox="0 0 920 1840" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f7f7"/>
+      <stop offset="100%" stop-color="#ececec"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7e27a"/>
+      <stop offset="50%" stop-color="#d8b444"/>
+      <stop offset="100%" stop-color="#b58a12"/>
+    </linearGradient>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.2" fill="#d8d8d8"/>
+    </pattern>
+    <style>
+      .title { font-family: "Nunito", "Trebuchet MS", "Arial Rounded MT Bold", sans-serif; font-weight: 900; fill: #111111; }
+      .body { font-family: "Nunito", "Trebuchet MS", "Arial Rounded MT Bold", sans-serif; font-weight: 800; fill: #111111; }
+      .small { font-family: "Nunito", "Trebuchet MS", "Arial Rounded MT Bold", sans-serif; font-weight: 700; fill: #444444; }
+      .label { font-family: "Nunito", "Trebuchet MS", "Arial Rounded MT Bold", sans-serif; font-weight: 900; letter-spacing: 1px; fill: #111111; }
+    </style>
+  </defs>
+
+  <rect width="920" height="1840" fill="url(#bg)"/>
+  <rect width="920" height="1840" fill="url(#dots)" opacity="0.35"/>
+
+  <text x="80" y="42" class="title" font-size="24">Главный экран</text>
+  <text x="520" y="42" class="title" font-size="24">Боевая арена</text>
+  <text x="80" y="928" class="title" font-size="24">Магазин</text>
+  <text x="520" y="928" class="title" font-size="24">Профиль и настройки</text>
+
+  <g transform="translate(40 60)" filter="url(#shadow)">
+    <rect width="390" height="844" rx="42" fill="#ffffff" stroke="#111111" stroke-width="6"/>
+    <rect x="14" y="14" width="362" height="816" rx="30" fill="#fbfbfb" stroke="#dddddd" stroke-width="2"/>
+    <rect x="132" y="22" width="126" height="26" rx="13" fill="#111111" opacity="0.95"/>
+
+    <text x="30" y="74" class="title" font-size="27">Gift Coin</text>
+    <text x="30" y="98" class="small" font-size="13">Telegram Mini App</text>
+
+    <circle cx="334" cy="66" r="24" fill="#111111"/>
+    <text x="334" y="74" text-anchor="middle" font-size="18" fill="#ffffff" class="body">G</text>
+
+    <rect x="24" y="126" width="342" height="148" rx="28" fill="#111111"/>
+    <rect x="36" y="138" width="318" height="124" rx="22" fill="#ffffff" opacity="0.08"/>
+    <text x="46" y="176" class="small" font-size="15" fill="#f0f0f0">Баланс</text>
+    <text x="46" y="223" class="body" font-size="36" fill="#ffffff">12 480</text>
+    <text x="46" y="246" class="small" font-size="14" fill="#f0f0f0">монет</text>
+
+    <g transform="translate(246 150)">
+      <circle cx="40" cy="40" r="34" fill="url(#gold)" stroke="#111111" stroke-width="4"/>
+      <circle cx="40" cy="40" r="22" fill="none" stroke="#111111" stroke-width="3" opacity="0.45"/>
+      <circle cx="32" cy="33" r="4" fill="#111111"/>
+      <circle cx="48" cy="33" r="4" fill="#111111"/>
+      <path d="M28 48 Q40 58 52 48" stroke="#111111" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <g>
+      <rect x="24" y="290" width="166" height="58" rx="20" fill="#111111"/>
+      <text x="107" y="327" text-anchor="middle" class="body" font-size="20" fill="#ffffff">BUY</text>
+      <rect x="200" y="290" width="166" height="58" rx="20" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+      <text x="283" y="327" text-anchor="middle" class="body" font-size="20">SELL</text>
+    </g>
+
+    <rect x="24" y="372" width="342" height="272" rx="28" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+    <text x="46" y="406" class="body" font-size="20">Новости</text>
+
+    <g transform="translate(36 424)">
+      <rect width="318" height="72" rx="20" fill="#f2f2f2" stroke="#111111" stroke-width="2"/>
+      <circle cx="36" cy="36" r="22" fill="#111111"/>
+      <path d="M26 34 Q36 20 46 34" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="30" cy="30" r="2.5" fill="#ffffff"/>
+      <circle cx="42" cy="30" r="2.5" fill="#ffffff"/>
+      <text x="72" y="32" class="body" font-size="15">Листинг мем-токенов растёт</text>
+      <text x="72" y="54" class="small" font-size="12">Doge, Hamster и новые питомцы на старте</text>
+    </g>
+
+    <g transform="translate(36 508)">
+      <rect width="318" height="72" rx="20" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+      <circle cx="36" cy="36" r="22" fill="url(#gold)" stroke="#111111" stroke-width="2"/>
+      <text x="36" y="43" text-anchor="middle" class="body" font-size="20">★</text>
+      <text x="72" y="32" class="body" font-size="15">Ежедневный бонус x2</text>
+      <text x="72" y="54" class="small" font-size="12">Забирай монеты и усиливай армию</text>
+    </g>
+
+    <g transform="translate(36 592)">
+      <rect width="318" height="44" rx="16" fill="#111111"/>
+      <text x="159" y="72" text-anchor="middle" class="small" font-size="13">Pull to refresh news</text>
+    </g>
+  </g>
+
+  <g transform="translate(480 60)" filter="url(#shadow)">
+    <rect width="390" height="844" rx="42" fill="#ffffff" stroke="#111111" stroke-width="6"/>
+    <rect x="14" y="14" width="362" height="816" rx="30" fill="#fbfbfb" stroke="#dddddd" stroke-width="2"/>
+    <rect x="132" y="22" width="126" height="26" rx="13" fill="#111111" opacity="0.95"/>
+
+    <text x="30" y="74" class="title" font-size="27">Battle Arena</text>
+    <text x="30" y="98" class="small" font-size="13">Лицом к лицу за монеты</text>
+
+    <circle cx="334" cy="66" r="24" fill="#111111"/>
+    <text x="334" y="74" text-anchor="middle" font-size="18" fill="#ffffff" class="body">⚔</text>
+
+    <rect x="24" y="126" width="342" height="356" rx="30" fill="#f4f4f4" stroke="#111111" stroke-width="4"/>
+    <ellipse cx="141" cy="400" rx="104" ry="28" fill="#cfcfcf" opacity="0.9"/>
+    <ellipse cx="247" cy="400" rx="104" ry="28" fill="#cfcfcf" opacity="0.9"/>
+    <path d="M32 150 C110 112, 280 112, 358 150" stroke="#111111" stroke-width="3" fill="none" opacity="0.25"/>
+
+    <g transform="translate(56 188)">
+      <circle cx="88" cy="88" r="72" fill="#ffffff" stroke="#111111" stroke-width="5"/>
+      <path d="M26 48 Q14 18 38 12 Q53 38 50 66" fill="#111111"/>
+      <path d="M150 48 Q162 18 138 12 Q123 38 126 66" fill="#111111"/>
+      <circle cx="70" cy="82" r="7" fill="#111111"/>
+      <circle cx="106" cy="82" r="7" fill="#111111"/>
+      <path d="M72 112 Q88 126 104 112" stroke="#111111" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <rect x="42" y="148" width="92" height="76" rx="26" fill="#111111"/>
+      <path d="M16 154 Q88 118 160 154" stroke="#111111" stroke-width="22" fill="none" stroke-linecap="round"/>
+      <path d="M18 150 Q88 108 158 150" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.95"/>
+      <text x="88" y="206" text-anchor="middle" class="body" font-size="14" fill="#ffffff">DOGE CAPTAIN</text>
+    </g>
+
+    <g transform="translate(194 188)">
+      <circle cx="48" cy="88" r="72" fill="#ffffff" stroke="#111111" stroke-width="5"/>
+      <path d="M-8 48 Q-20 18 4 12 Q19 38 16 66" fill="#111111"/>
+      <path d="M104 48 Q116 18 92 12 Q77 38 80 66" fill="#111111"/>
+      <circle cx="30" cy="82" r="7" fill="#111111"/>
+      <circle cx="66" cy="82" r="7" fill="#111111"/>
+      <path d="M32 110 Q48 98 64 110" stroke="#111111" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <rect x="6" y="148" width="84" height="76" rx="26" fill="#111111"/>
+      <path d="M-18 154 Q48 118 114 154" stroke="#111111" stroke-width="22" fill="none" stroke-linecap="round"/>
+      <path d="M-18 150 Q48 108 114 150" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.95"/>
+      <text x="48" y="206" text-anchor="middle" class="body" font-size="14" fill="#ffffff">HAMSTER KING</text>
+    </g>
+
+    <circle cx="175" cy="178" r="28" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+    <text x="175" y="186" text-anchor="middle" class="body" font-size="20">VS</text>
+
+    <g>
+      <rect x="42" y="504" width="306" height="74" rx="24" fill="#111111"/>
+      <text x="195" y="550" text-anchor="middle" class="body" font-size="24" fill="#ffffff">БИТВА</text>
+    </g>
+
+    <g>
+      <rect x="42" y="600" width="306" height="90" rx="26" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+      <circle cx="84" cy="645" r="18" fill="url(#gold)" stroke="#111111" stroke-width="3"/>
+      <text x="84" y="652" text-anchor="middle" class="body" font-size="16">3</text>
+      <text x="118" y="638" class="body" font-size="16">Ставка</text>
+      <text x="118" y="660" class="small" font-size="12">Победитель забирает призовой фонд</text>
+      <text x="314" y="648" text-anchor="end" class="body" font-size="18">x2.5</text>
+    </g>
+  </g>
+
+  <g transform="translate(40 946)" filter="url(#shadow)">
+    <rect width="390" height="844" rx="42" fill="#ffffff" stroke="#111111" stroke-width="6"/>
+    <rect x="14" y="14" width="362" height="816" rx="30" fill="#fbfbfb" stroke="#dddddd" stroke-width="2"/>
+    <rect x="132" y="22" width="126" height="26" rx="13" fill="#111111" opacity="0.95"/>
+
+    <text x="30" y="74" class="title" font-size="27">Shop</text>
+    <text x="30" y="98" class="small" font-size="13">NFT-карточки питомцев</text>
+
+    <circle cx="334" cy="66" r="24" fill="#111111"/>
+    <text x="334" y="74" text-anchor="middle" font-size="18" fill="#ffffff" class="body">♡</text>
+
+    <g transform="translate(24 126)">
+      <rect width="166" height="208" rx="28" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+      <rect x="16" y="16" width="134" height="104" rx="22" fill="#f0f0f0" stroke="#111111" stroke-width="2"/>
+      <circle cx="49" cy="58" r="26" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+      <path d="M28 44 Q18 20 38 18 Q49 36 46 56" fill="#111111"/>
+      <path d="M70 44 Q80 20 60 18 Q49 36 52 56" fill="#111111"/>
+      <circle cx="41" cy="56" r="3.5" fill="#111111"/>
+      <circle cx="57" cy="56" r="3.5" fill="#111111"/>
+      <path d="M40 66 Q49 72 58 66" stroke="#111111" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <text x="20" y="150" class="body" font-size="15">Doge Pup #01</text>
+      <text x="20" y="173" class="small" font-size="12">Редкий, сияющий, loyal</text>
+      <rect x="16" y="180" width="134" height="18" rx="9" fill="#111111"/>
+      <text x="83" y="194" text-anchor="middle" class="body" font-size="12" fill="#ffffff">Купить • 120</text>
+    </g>
+
+    <g transform="translate(200 126)">
+      <rect width="166" height="208" rx="28" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+      <rect x="16" y="16" width="134" height="104" rx="22" fill="#f0f0f0" stroke="#111111" stroke-width="2"/>
+      <circle cx="83" cy="58" r="26" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+      <path d="M62 42 Q50 18 74 16 Q85 36 82 56" fill="#111111"/>
+      <path d="M104 42 Q116 18 92 16 Q81 36 84 56" fill="#111111"/>
+      <circle cx="75" cy="56" r="3.5" fill="#111111"/>
+      <circle cx="91" cy="56" r="3.5" fill="#111111"/>
+      <path d="M74 66 Q83 72 92 66" stroke="#111111" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <text x="20" y="150" class="body" font-size="15">Hamster Boss #07</text>
+      <text x="20" y="173" class="small" font-size="12">Легендарный, боевой, быстрый</text>
+      <rect x="16" y="180" width="134" height="18" rx="9" fill="#111111"/>
+      <text x="83" y="194" text-anchor="middle" class="body" font-size="12" fill="#ffffff">Купить • 240</text>
+    </g>
+
+    <g transform="translate(24 354)">
+      <rect width="342" height="130" rx="28" fill="#111111"/>
+      <text x="20" y="40" class="body" font-size="18" fill="#ffffff">Золотая коллекция</text>
+      <text x="20" y="66" class="small" font-size="13" fill="#f0f0f0">Эффекты, рамки и спец-эмоции для арены</text>
+      <g transform="translate(244 28)">
+        <circle cx="22" cy="22" r="20" fill="url(#gold)" stroke="#111111" stroke-width="3"/>
+        <circle cx="64" cy="22" r="20" fill="url(#gold)" stroke="#111111" stroke-width="3"/>
+        <circle cx="106" cy="22" r="20" fill="url(#gold)" stroke="#111111" stroke-width="3"/>
+        <text x="22" y="29" text-anchor="middle" class="body" font-size="16">★</text>
+        <text x="64" y="29" text-anchor="middle" class="body" font-size="16">★</text>
+        <text x="106" y="29" text-anchor="middle" class="body" font-size="16">★</text>
+      </g>
+      <rect x="20" y="88" width="128" height="24" rx="12" fill="#ffffff"/>
+      <text x="84" y="106" text-anchor="middle" class="body" font-size="12">Купить набор</text>
+    </g>
+  </g>
+
+  <g transform="translate(480 946)" filter="url(#shadow)">
+    <rect width="390" height="844" rx="42" fill="#ffffff" stroke="#111111" stroke-width="6"/>
+    <rect x="14" y="14" width="362" height="816" rx="30" fill="#fbfbfb" stroke="#dddddd" stroke-width="2"/>
+    <rect x="132" y="22" width="126" height="26" rx="13" fill="#111111" opacity="0.95"/>
+
+    <text x="30" y="74" class="title" font-size="27">Profile</text>
+    <text x="30" y="98" class="small" font-size="13">Профиль / Настройки</text>
+
+    <circle cx="334" cy="66" r="24" fill="#111111"/>
+    <text x="334" y="74" text-anchor="middle" font-size="18" fill="#ffffff" class="body">☰</text>
+
+    <rect x="24" y="126" width="342" height="198" rx="30" fill="#111111"/>
+    <circle cx="92" cy="205" r="44" fill="#ffffff" stroke="#111111" stroke-width="5"/>
+    <path d="M66 181 Q52 154 74 150 Q91 172 86 196" fill="#111111"/>
+    <path d="M117 181 Q131 154 109 150 Q92 172 97 196" fill="#111111"/>
+    <circle cx="77" cy="202" r="4.5" fill="#111111"/>
+    <circle cx="107" cy="202" r="4.5" fill="#111111"/>
+    <path d="M76 220 Q92 232 108 220" stroke="#111111" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="154" y="188" class="body" font-size="24" fill="#ffffff">@giftcoin_user</text>
+    <text x="154" y="218" class="small" font-size="13" fill="#eeeeee">Ранг: Meme Champion</text>
+    <text x="154" y="243" class="small" font-size="13" fill="#eeeeee">Баланс: 12 480 монет</text>
+    <rect x="154" y="256" width="176" height="38" rx="18" fill="#ffffff"/>
+    <text x="242" y="281" text-anchor="middle" class="body" font-size="14">Сменить аватар</text>
+
+    <rect x="24" y="348" width="342" height="116" rx="26" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+    <text x="46" y="382" class="body" font-size="18">Реферальный код</text>
+    <rect x="46" y="398" width="190" height="42" rx="18" fill="#f2f2f2" stroke="#111111" stroke-width="2"/>
+    <text x="141" y="425" text-anchor="middle" class="body" font-size="16">GIFT-COIN-24</text>
+    <rect x="250" y="398" width="92" height="42" rx="18" fill="#111111"/>
+    <text x="296" y="425" text-anchor="middle" class="body" font-size="14" fill="#ffffff">Копия</text>
+
+    <rect x="24" y="486" width="342" height="280" rx="26" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+    <text x="46" y="520" class="body" font-size="18">Меню</text>
+
+    <g transform="translate(38 540)">
+      <rect width="314" height="44" rx="16" fill="#f4f4f4"/>
+      <circle cx="24" cy="22" r="14" fill="#111111"/>
+      <text x="24" y="28" text-anchor="middle" font-size="14" fill="#ffffff">♪</text>
+      <text x="52" y="28" class="body" font-size="14">Уведомления</text>
+      <text x="292" y="28" text-anchor="end" class="small" font-size="12">On</text>
+    </g>
+
+    <g transform="translate(38 596)">
+      <rect width="314" height="44" rx="16" fill="#f4f4f4"/>
+      <circle cx="24" cy="22" r="14" fill="#111111"/>
+      <text x="24" y="28" text-anchor="middle" font-size="14" fill="#ffffff">✦</text>
+      <text x="52" y="28" class="body" font-size="14">Язык / Language</text>
+      <text x="292" y="28" text-anchor="end" class="small" font-size="12">RU</text>
+    </g>
+
+    <g transform="translate(38 652)">
+      <rect width="314" height="44" rx="16" fill="#f4f4f4"/>
+      <circle cx="24" cy="22" r="14" fill="#111111"/>
+      <text x="24" y="28" text-anchor="middle" font-size="14" fill="#ffffff">☎</text>
+      <text x="52" y="28" class="body" font-size="14">Поддержка</text>
+      <text x="292" y="28" text-anchor="end" class="small" font-size="12">24/7</text>
+    </g>
+
+    <g transform="translate(38 708)">
+      <rect width="314" height="44" rx="16" fill="#111111"/>
+      <text x="157" y="28" text-anchor="middle" class="body" font-size="14" fill="#ffffff">Выйти из аккаунта</text>
+    </g>
+  </g>
+</svg>

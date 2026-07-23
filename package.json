@@ -1,0 +1,13 @@
+{
+  "name": "gift-coin-mini-app",
+  "version": "1.0.0",
+  "description": "GIFT COIN — Telegram Mini App (Tap-to-Earn)",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
