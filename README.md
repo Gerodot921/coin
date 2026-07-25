@@ -1,60 +1,39 @@
-# Gift Coin Mini App
+# GIFT COIN deployment
 
-Это стартовый проект Telegram Mini App + backend для бота. Проект можно разворачивать на GitHub и Vercel.
+## What this repo contains
+- `Qwen_html_20260725_8vxtp8ags.html` - frontend for Vercel / Telegram Mini App.
+- `Qwen_js_20260725_tgmuaryvu.txt` - backend source.
+- `server.js` - Node entry point that loads the backend file.
+- `api/[...path].js` - Vercel proxy to the backend server.
+- `vercel.json` - routes the Vercel root to the HTML file.
 
-## Что здесь есть
-
-- статичный фронтенд Mini App: [index.html](index.html), [styles.css](styles.css), [app.js](app.js)
-- простой backend для Telegram: [server.js](server.js)
-- локальный запуск через Node.js
-
-## Локальный запуск
-
-1. Установите зависимости:
-   ```bash
-   npm install
-   ```
-2. Запустите сервер:
+## Local run
+1. Start backend:
    ```bash
    npm start
    ```
-3. Откройте:
+2. Open the HTML file in a browser.
+3. For local testing, use:
    ```text
-   http://127.0.0.1:3000/
+   file:///D:/ProjectM/coin/Qwen_html_20260725_8vxtp8ags.html?api=http://localhost:3001
    ```
 
-## Подготовка к GitHub
+## Deploy backend to your server
+- Run `node server.js` or `npm start`.
+- Set environment variables:
+  - `PORT` - server port, for example `3001`.
+  - `BOT_TOKEN` - Telegram bot token from BotFather.
+  - `SERVER_SECRET` - secret for token signing.
+  - `AUTH_DEV=0` - keep dev auth disabled in production.
+  - `CORS_ORIGIN` - set to your Vercel domain if you ever call the backend directly.
+- Make sure the backend is available over HTTPS.
 
-1. Инициализируйте git-репозиторий:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial Gift Coin Mini App"
-   ```
-2. Создайте репозиторий на GitHub и подключите его:
-   ```bash
-   git branch -M main
-   git remote add origin <URL_ВАШЕГО_REPO>
-   git push -u origin main
-   ```
+## Deploy frontend to Vercel
+- Import this folder into Vercel as a project.
+- Set the environment variable `BACKEND_URL` to your backend base URL, for example `https://api.example.com`.
+- Vercel will serve the HTML file as the root page and proxy `/api/*` requests to your backend.
 
-## Настройка Vercel
-
-1. Зайдите на https://vercel.com и подключите GitHub-репозиторий.
-2. Для деплоя выберите проект и укажите:
-   - Framework Preset: Other
-   - Build Command: `npm run build` (если появится, можно оставить пустым для статического сервера)
-   - Output Directory: `.`
-3. Для backend-части лучше использовать отдельный хостинг (например Render, Railway, Fly.io), потому что Vercel лучше подходит под frontend/SSR.
-4. Если хотите разворачивать только frontend, используйте Vercel для статического сайта, а Telegram webhook и bot-обработку — на отдельном сервере.
-
-## Безопасность
-
-- Не храните токен бота в git.
-- Для настоящего деплоя передайте токен через переменные окружения в Vercel/Render/Railway.
-- Для локального запуска используйте файл `.env`.
-
-## Что нужно для Telegram
-
-- в настройках бота выставьте webhook на публичный URL вашего backend-сервера;
-- Mini App подключается через Telegram WebApp и передаёт initData.
+## Telegram Mini App
+- In BotFather, set the Web App URL to your Vercel domain, for example `https://your-project.vercel.app`.
+- The frontend will call `/api/*` on the same Vercel domain, and Vercel will forward those requests to the backend.
+- For local file testing only, use the `?api=http://localhost:3001` override.
