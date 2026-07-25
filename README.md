@@ -1,4 +1,4 @@
-# GIFT COIN deployment
+# GIFT COIN deployment...
 
 ## What this repo contains
 - `Qwen_html_20260725_8vxtp8ags.html` - frontend for Vercel / Telegram Mini App.
