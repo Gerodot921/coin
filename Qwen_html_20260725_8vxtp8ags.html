@@ -140,7 +140,7 @@
 /* >>> EDIT THIS to your backend URL on your own server <<<
    You can also override at runtime with ?api=https://... for testing. */
 const API_BASE = (new URLSearchParams(location.search).get('api'))
-  || (location.protocol === 'file:' ? 'http://localhost:3001' : '/api');
+  || (location.protocol === 'file:' ? 'http://localhost:3001' : 'https://api.richmachine.ru/auth');
 
 const TG = window.Telegram && window.Telegram.WebApp;
 const $ = (s, r = document) => r.querySelector(s);
