@@ -2,8 +2,8 @@
   "name": "gift-coin",
   "private": true,
   "version": "1.0.0",
-  "type": "commonjs",
   "scripts": {
+    "build": "echo 'No build step required for Vercel'",
     "start": "node server.js",
     "dev": "node server.js"
   }
