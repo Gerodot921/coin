@@ -2,6 +2,10 @@
   "version": 2,
   "rewrites": [
     {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
       "source": "/",
       "destination": "/Qwen_html_20260725_8vxtp8ags.html"
     },
