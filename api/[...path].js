@@ -30,19 +30,31 @@ module.exports = async function handler(req, res) {
     headers[key] = value;
   }
 
-  const init = { method: req.method, headers };
-  if (req.method !== 'GET' && req.method !== 'HEAD') {
-    init.body = await readBody(req);
+  try {
+    const init = { method: req.method, headers };
+    if (req.method !== 'GET' && req.method !== 'HEAD') {
+      const bodyBuffer = await readBody(req);
+      init.body = bodyBuffer.toString(); // Конвертируем Buffer в string для fetch
+    }
+
+    const upstream = await fetch(requestUrl.toString(), init);
+    const bodyText = await upstream.text();
+
+    res.statusCode = upstream.status;
+    
+    // Копируем заголовки от бэкенда
+    upstream.headers.forEach((value, key) => {
+      const lower = key.toLowerCase();
+      if (['content-encoding', 'transfer-encoding', 'connection', 'content-length'].includes(lower)) return;
+      res.setHeader(key, value);
+    });
+    
+    res.setHeader('Content-Type', 'application/json');
+    res.end(bodyText);
+  } catch (error) {
+    console.error('Proxy error:', error);
+    res.statusCode = 500;
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({ error: 'Proxy failed', details: error.message }));
   }
-
-  const upstream = await fetch(requestUrl, init);
-  const body = Buffer.from(await upstream.arrayBuffer());
-
-  res.statusCode = upstream.status;
-  upstream.headers.forEach((value, key) => {
-    const lower = key.toLowerCase();
-    if (['content-encoding', 'transfer-encoding', 'connection', 'content-length'].includes(lower)) return;
-    res.setHeader(key, value);
-  });
-  res.end(body);
 };
