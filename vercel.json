@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "private": true,
   "functions": {
     "api/[...path].js": {
       "memory": 1024,
