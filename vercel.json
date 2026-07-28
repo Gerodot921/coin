@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/Qwen_html__8vxtp8ags.html"
+      "destination": "/gift-coin-front.html"
     }
   ]
 }
